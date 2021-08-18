@@ -1,0 +1,28 @@
+.other {
+  background-color: #83e85a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 30%;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin: 1% 0;
+}
+
+.author {
+  background-color: #2cb978;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 30%;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin: 1% 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.author-name {
+  color: #107a8b;
+}
+/*# sourceMappingURL=messageCard.css.map */

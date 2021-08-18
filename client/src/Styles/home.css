@@ -1,0 +1,65 @@
+.homeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.homeContainer input {
+  border-color: #107a8b;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px 5px;
+  font-size: 18px;
+}
+
+.homeContainer button {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 15px;
+  border-style: none;
+  background-color: #107a8b;
+  color: #fff;
+  font-size: 18px;
+}
+
+.messageContainer {
+  margin-bottom: 2%;
+  overflow-y: auto;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.unauth-container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.unauth-container h1 {
+  color: #2cb978;
+}
+
+.unauth-container p {
+  color: #3b5441;
+}
+
+@media (max-width: 480px) {
+  .homeContainer {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=home.css.map */

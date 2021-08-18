@@ -1,0 +1,66 @@
+$brandText: #2cb978;
+$brand2: #107a8b;
+$brand3: #83e85a;
+$brand4: #3b5441;
+
+$tabletWidth: 768px;
+$phoneWidth: 480px;
+$medLaptop: 992px;
+$largeLaptop: 1200px;
+
+.other {
+    background-color: $brand3;
+    width: fit-content;
+    max-width: 30%;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 1% 0;
+    animation: slideLeftAnimation 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.author {
+    background-color: $brandText;
+    width: fit-content;
+    max-width: 30%;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 1% 0;
+    align-self: flex-end;
+    animation: slideRightAnimation 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.author-name {
+    color: $brand2;
+}
+
+@keyframes slideLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transfrom: translateX(0%);
+    }
+}
+
+@keyframes slideRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transfrom: translateX(0%);
+    }
+}

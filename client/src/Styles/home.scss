@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$tabletWidth: 768px;
+$phoneWidth: 480px;
+$medLaptop: 992px;
+$largeLaptop: 1200px;
+
+$brandText: #2cb978;
+$brand2: #107a8b;
+$brand3: #83e85a;
+$brand4: #3b5441;
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+    h1 {
+        color: $brandText;
+    }
+
+    input {
+        border-color: $brand2;
+        border-radius: 5px;
+        border-width: 1px;
+        padding: 10px 5px;
+        font-size: 18px;
+        outline-width: 1px;
+        outline-color: $brandText;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        border-radius: 20px;
+        margin-top: 15px;
+        border-style: none;
+        background-color: $brand2;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+.messageContainer {
+    margin-bottom: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.unauth-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+
+    h1 {
+        color: $brandText;
+        font-family: 'Lato', sans-serif;
+    }
+
+    p {
+        color: $brand4;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeContainer {
+        width: 80%;
+    }
+}

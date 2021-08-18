@@ -1,0 +1,71 @@
+$tabletWidth: 768px;
+$phoneWidth: 480px;
+$medLaptop: 992px;
+$largeLaptop: 1200px;
+
+$brandText: #2cb978;
+$brand2: #107a8b;
+$brand3: #83e85a;
+$brand4: #3b5441;
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+        color: $brandText;
+        font-size: 32px;
+    }
+
+    label {
+        color: $brand4;
+        font-size: 24px;
+        margin-top: 5%;
+    }
+
+    input {
+        border-color: $brand2;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+
+    input:focus {
+        outline-width: 1px;
+        outline-color: $brandText;
+    }
+}
+
+.auth-container {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+        font-size: 24px;
+        color: $brand4;
+    }
+}
+
+.btn-form {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border-style: none;
+    background-color: $brand2;
+    color: #fff;
+    font-size: 18px;
+}
+
+.log-label {
+    color: $brandText;
+    font-size: 24px;
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        width: 80%;
+    }
+}

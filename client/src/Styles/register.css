@@ -1,0 +1,57 @@
+.registerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.registerContainer h1 {
+  color: #2cb978;
+  font-size: 32px;
+}
+
+.registerContainer label {
+  color: #3b5441;
+  font-size: 24px;
+  margin-top: 5%;
+}
+
+.registerContainer input {
+  border-color: #107a8b;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.registerContainer input:focus {
+  outline-width: 1px;
+  outline-color: #2cb978;
+}
+
+.btn-form {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border-style: none;
+  background-color: #107a8b;
+  color: #fff;
+  font-size: 18px;
+}
+
+.reg-label {
+  font-size: 24px;
+  color: #3b5441;
+}
+
+@media (max-width: 480px) {
+  .registerContainer {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=register.css.map */

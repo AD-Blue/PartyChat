@@ -1,0 +1,51 @@
+$brandText: #2cb978;
+$brand2: #107a8b;
+$brand3: #83e85a;
+$brand4: #3b5441;
+
+$tabletWidth: 768px;
+$phoneWidth: 480px;
+$medLaptop: 992px;
+$largeLaptop: 1200px;
+
+nav {
+    background: $brand2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+       
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        margin-top: 0;
+
+        li {
+            margin: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: $brandText;
+            }
+
+            a:active {
+                color: $brand3;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        justify-content: space-evenly;
+
+        ul {
+            li {
+                margin: 0 15px;
+            }
+        }
+    }
+}
