@@ -8,10 +8,18 @@ const csrf = require('csrf');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const path = require("path")
 
-const csrfProtection = csrf({
+// ... other app.use middleware 
+app.use(express.static(path.join(__dirname, "client", "build")))
+
+// ...
+// Right before your app.listen(), add this:
+
+
+/* const csrfProtection = csrf({
     cookie: true
-});
+}); */
 
 require('dotenv').config({ path: './config.env'});
 
@@ -60,6 +68,10 @@ app.get('/csrf-token', (req, res) => {
 })
 
 const PORT = process.env.PORT || 5000;
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`.cyan);

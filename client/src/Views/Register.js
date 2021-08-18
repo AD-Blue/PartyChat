@@ -31,7 +31,7 @@ export default function Register() {
 
         try {
             if(passwordReg === confirmPassword && usernameReg && passwordReg){
-                await axios.post('http://localhost:5000/api/users/register', {
+                await axios.post('/api/users/register', {
                     username: usernameReg,
                     password: passwordReg
                 }, config)

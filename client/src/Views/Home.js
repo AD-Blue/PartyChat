@@ -15,7 +15,7 @@ export default function Home() {
 
     const sendMessage = async () => {
         try {
-            await axios.post(`http://localhost:5000/api/messages/${userObject}`, {body: message});
+            await axios.post(`/api/messages/${userObject}`, {body: message});
             setMessage('');
             console.log('Message posted successfully');
         } catch (err) {
@@ -32,7 +32,7 @@ export default function Home() {
 
     const getMessages = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/messages');
+            const res = await axios.get('/api/messages');
             console.log(res)
             setMessageList(res.data.data);
             

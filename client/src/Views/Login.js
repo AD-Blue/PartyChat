@@ -15,7 +15,7 @@ export default function Login() {
     const [userLabel, setUserLabel] = useState(<p className='log-label'></p>)
 
 
-    //axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
 
     const handleKeyPress = (e) => {
         if (e.keyCode === 13) {
@@ -33,15 +33,13 @@ export default function Login() {
 
         try {
             if(username && password) {
-                const post = await axios.post('http://localhost:5000/api/users/login', {
+                const post = await axios.post('api/users/login', {
                     username: username,
                     password: password
                 }, config)
 
                 const id = post.data.data._id;
                 console.log(post);
-
-                localStorage.setItem('token', post.data.token)
 
                 if(post.data.auth === true) {
                     console.log('AUTH WORKING')
@@ -91,7 +89,7 @@ export default function Login() {
 
     const signOut = async () => {
         try {
-            await axios.get('https://party-chat-backend.herokuapp.com/api/users/logout');
+            await axios.get('/api/users/logout');
             console.log('Attempting to log out');
             window.location.reload(false);
         } catch (err) {
@@ -100,7 +98,7 @@ export default function Login() {
     }
 
     useEffect(() => {
-        axios.get("https://party-chat-backend.herokuapp.com/api/users/login").then((response) => {
+        axios.get("/api/users/login").then((response) => {
             if(response.data.loggedIn) {
                 setLoginStatus(true);
                 setIsAuthenticated(true);

@@ -40,7 +40,7 @@ exports.loginUser = async (req, res) => {
                         expiresIn: 3600,
                     })
 
-                    res.cookie('token', token, { domain:'https://party-chat-liart.vercel.app/', expires: 0, httpOnly: true }); //expires: 0 makes it a session cookie
+                    res.cookie('token', token, { expires: 0, httpOnly: true }); //expires: 0 makes it a session cookie
 
                     req.session.user = loginUser;
                     
