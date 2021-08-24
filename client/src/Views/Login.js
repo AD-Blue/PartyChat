@@ -5,7 +5,7 @@ import '../Styles/login.scss';
 
 export default function Login() {
 
-    const { setIsAuthenticated, setUserObject } = useContext(UserContext);
+    const { isAuthenticated, setIsAuthenticated, setUserObject } = useContext(UserContext);
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -110,7 +110,7 @@ export default function Login() {
 
     return (
         <div>
-            {!loginStatus && (
+            {!loginStatus && !isAuthenticated && (
                 <div className='loginContainer'>
                     <h1>Log In</h1>
                 
@@ -126,7 +126,7 @@ export default function Login() {
                 </div>
             )}
 
-            {loginStatus && (
+            {loginStatus && isAuthenticated && (
                 <div className='auth-container'>
                     {userLabel}
                     <button className='btn-form' onClick={signOut}>Sign Out</button>

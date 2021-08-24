@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import '../Styles/register.scss';
+import { UserContext } from '../Context/UserContext';
 
 export default function Register() {
+
+    const { setUserObject, setIsAuthenticated } = useContext(UserContext);
 
     const [usernameReg, setUsernameReg] = useState('');
     const [passwordReg, setPasswordReg] = useState('');
@@ -39,6 +42,14 @@ export default function Register() {
                 console.log("Successfully posted new user")
 
                 setLabelText(<p>User Successfully Registered!</p>)
+
+                const post = await axios.post('api/users/login', {
+                    username: usernameReg,
+                    password: passwordReg
+                }, config);
+
+                setUserObject(post.data.data._id);
+                setIsAuthenticated(true);
 
                 clearFields();
             }
