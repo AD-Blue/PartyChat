@@ -10,7 +10,6 @@ exports.jwtVerify = async (req, res, next) => {
         return res.send("No token provided/token is missing");
     }
     else {
-        console.log(`COOKIE ACQUIRED: ${req.cookies.token}`)
         jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
             if (err) {
                 //console.log(`Something went wrong, ${err}`)

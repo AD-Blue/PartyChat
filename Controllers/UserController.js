@@ -43,8 +43,6 @@ exports.loginUser = async (req, res) => {
                     res.cookie('token', token, { expires: 0, httpOnly: true }); //expires: 0 makes it a session cookie
 
                     req.session.user = loginUser;
-                    
-                    console.log(`DEBUG: ID = ${id}`);
 
                     return res.status(200).json({
                         success: true,
@@ -93,10 +91,7 @@ exports.checkLogin = async (req, res) => {
 }
 
 exports.checkUserAuth = async (req, res) => {
-    console.log('checking auth...')
     try {
-        console.log("Check auth successful")
-        console.log(req.cookies.token)
         res.set('x-access-token', req.cookies.token)
 
         return res.status(200).json({
