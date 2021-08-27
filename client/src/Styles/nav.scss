@@ -1,7 +1,9 @@
-$brandText: #2cb978;
-$brand2: #107a8b;
-$brand3: #83e85a;
-$brand4: #3b5441;
+$brand1: #FCFCFC;
+$brand2: #23B5D3;
+$brand3: #A393BF;
+$brand4: #071013;
+$brand5: #061E22;
+$brand6: #9882AC;
 
 $tabletWidth: 768px;
 $phoneWidth: 480px;
@@ -27,7 +29,7 @@ nav {
 
             a {
                 text-decoration: none;
-                color: $brandText;
+                color: $brand1;
             }
 
             a:active {

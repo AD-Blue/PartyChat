@@ -3,10 +3,12 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
-$brandText: #2cb978;
-$brand2: #107a8b;
-$brand3: #83e85a;
-$brand4: #3b5441;
+$brand1: #FCFCFC;
+$brand2: #23B5D3;
+$brand3: #A393BF;
+$brand4: #071013;
+$brand5: #061E22;
+$brand6: #9882AC;
 
 .loginContainer {
     display: flex;
@@ -16,12 +18,12 @@ $brand4: #3b5441;
     margin-right: auto;
 
     h1 {
-        color: $brandText;
+        color: $brand3;
         font-size: 32px;
     }
 
     label {
-        color: $brand4;
+        color: $brand1;
         font-size: 24px;
         margin-top: 5%;
     }
@@ -30,11 +32,13 @@ $brand4: #3b5441;
         border-color: $brand2;
         border-radius: 5px;
         border-width: 1px;
+        background: $brand5;
+        color: $brand1;
     }
 
     input:focus {
         outline-width: 1px;
-        outline-color: $brandText;
+        outline-color: $brand6;
     }
 }
 
@@ -44,7 +48,7 @@ $brand4: #3b5441;
 
     p {
         font-size: 24px;
-        color: $brand4;
+        color: $brand3;
     }
 }
 
@@ -60,7 +64,7 @@ $brand4: #3b5441;
 }
 
 .log-label {
-    color: $brandText;
+    color: $brand3;
     font-size: 24px;
 }
 

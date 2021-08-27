@@ -88,7 +88,7 @@ export default function Home() {
                                 <div className='authorCard'>
                                     <MessageCard key={message._id} message={message} styleName={'author'} />
                                     <img 
-                                        src={`https://avatars.dicebear.com/api/jdenticon/${message.authorId}.svg`} 
+                                        src={`https://avatars.dicebear.com/api/jdenticon/${message.authorName}.svg`} 
                                         alt='Randomized unique avatar representing a user'
                                         height='30px'
                                         width='30px'

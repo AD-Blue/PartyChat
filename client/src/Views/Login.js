@@ -126,7 +126,7 @@ export default function Login() {
                 </div>
             )}
 
-            {loginStatus && isAuthenticated && (
+            {isAuthenticated && (
                 <div className='auth-container'>
                     {userLabel}
                     <button className='btn-form' onClick={signOut}>Sign Out</button>

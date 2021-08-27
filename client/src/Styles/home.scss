@@ -5,10 +5,12 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
-$brandText: #2cb978;
-$brand2: #107a8b;
-$brand3: #83e85a;
-$brand4: #3b5441;
+$brand1: #FCFCFC;
+$brand2: #23B5D3;
+$brand3: #A393BF;
+$brand4: #071013;
+$brand5: #061E22;
+$brand6: #9882AC;
 
 .homeContainer {
     display: flex;
@@ -18,7 +20,7 @@ $brand4: #3b5441;
     width: 60%;
 
     h1 {
-        color: $brandText;
+        color: $brand3;
     }
 
     input {
@@ -28,7 +30,8 @@ $brand4: #3b5441;
         padding: 10px 5px;
         font-size: 18px;
         outline-width: 1px;
-        outline-color: $brandText;
+        outline-color: $brand1;
+        background: $brand5;
     }
 
     button {
@@ -50,6 +53,8 @@ $brand4: #3b5441;
     height: 500px;
     display: flex;
     flex-direction: column;
+    background: $brand5;
+    border-radius: 10px;
 }
 
 .unauth-container {
@@ -58,7 +63,7 @@ $brand4: #3b5441;
     text-align: center;
 
     h1 {
-        color: $brandText;
+        color: $brand1;
         font-family: 'Lato', sans-serif;
     }
 
