@@ -8,13 +8,28 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
+.otherCard {
+    display: flex;
+    flex-direction: row;
+    min-width: 10%;
+    align-self: flex-start;
+    max-width: 30%;
+}
+
+.authorCard {
+    display: flex;
+    flex-direction: row;
+    min-width: 10%;
+    align-self: flex-end;
+    max-width: 30%;
+}
+
 .other {
     background-color: $brand3;
     width: fit-content;
-    max-width: 30%;
     padding: 0 5px;
     border-radius: 5px;
-    margin: 1% 0;
+    margin: 1% 10px;
     animation: slideLeftAnimation 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -23,10 +38,9 @@ $largeLaptop: 1200px;
 .author {
     background-color: $brandText;
     width: fit-content;
-    max-width: 30%;
     padding: 0 5px;
     border-radius: 5px;
-    margin: 1% 0;
+    margin: 1% 10px;
     align-self: flex-end;
     animation: slideRightAnimation 0.5s;
     animation-iteration-count: 1;

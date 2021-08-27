@@ -69,9 +69,9 @@ export default function Home() {
         const channel = pusher.subscribe('chat');
         channel.bind('message-sent', (data) => {
             console.log(`Data received: `);
-            console.log(data)
+            console.log(data);
             getMessages();
-            return data
+            return data;
         });
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -84,10 +84,30 @@ export default function Home() {
                 <div className='messageContainer' ref={messageEl}>
                     {messageList.map((message) => {
                         if(message.authorId === userObject) {
-                            return <MessageCard key={message._id} message={message} styleName={'author'} />
+                            return (
+                                <div className='authorCard'>
+                                    <MessageCard key={message._id} message={message} styleName={'author'} />
+                                    <img 
+                                        src={`https://avatars.dicebear.com/api/jdenticon/${message.authorId}.svg`} 
+                                        alt='Randomized unique avatar representing a user'
+                                        height='30px'
+                                        width='30px'
+                                    />
+                                </div>
+                            )
                         }
                         else {
-                            return <MessageCard key={message._id} message={message} styleName={'other'} />
+                            return (
+                                <div className='otherCard'>
+                                    <img 
+                                        src={`https://avatars.dicebear.com/api/jdenticon/${message.authorId}.svg`} 
+                                        alt='Randomized unique avatar representing a user'
+                                        height='30px'
+                                        width='30px'
+                                    />
+                                    <MessageCard key={message._id} message={message} styleName={'other'} />
+                                </div>
+                            )
                         }
                     })}
                 </div>
