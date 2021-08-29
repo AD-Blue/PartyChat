@@ -89,7 +89,7 @@ export default function Home() {
                                     <MessageCard key={message._id} message={message} styleName={'author'} />
                                     <img 
                                         src={`https://avatars.dicebear.com/api/jdenticon/${message.authorName}.svg`} 
-                                        alt='Randomized unique avatar representing a user'
+                                        alt={`Randomized avatar representing the author's user`}
                                         height='30px'
                                         width='30px'
                                     />
@@ -101,7 +101,7 @@ export default function Home() {
                                 <div className='otherCard'>
                                     <img 
                                         src={`https://avatars.dicebear.com/api/jdenticon/${message.authorId}.svg`} 
-                                        alt='Randomized unique avatar representing a user'
+                                        alt={`Randomized avatar representing the user ${message.authorName}`}
                                         height='30px'
                                         width='30px'
                                     />
