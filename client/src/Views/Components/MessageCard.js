@@ -5,7 +5,7 @@ export default function MessageCard({ message, styleName }) {
     return (
         <div className={styleName}>
             <p className='author-name'>{message.authorName}</p>
-            <p>{message.body}</p>
+            <p className='message-text'>{message.body}</p>
         </div>
     )
 }

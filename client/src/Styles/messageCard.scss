@@ -1,9 +1,9 @@
 $brand1: #FCFCFC;
 $brand2: #23B5D3;
-$brand3: #A393BF;
+$brand3: #2B4150;
 $brand4: #071013;
 $brand5: #061E22;
-$brand6: #67527A;
+$brand6: #3D77A4;
 
 $tabletWidth: 768px;
 $phoneWidth: 480px;
@@ -51,6 +51,10 @@ $largeLaptop: 1200px;
 
 .author-name {
     color: $brand2;
+}
+
+.message-text {
+    color: $brand1;
 }
 
 @keyframes slideLeftAnimation {

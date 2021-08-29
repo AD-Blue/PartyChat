@@ -7,10 +7,10 @@ $largeLaptop: 1200px;
 
 $brand1: #FCFCFC;
 $brand2: #23B5D3;
-$brand3: #A393BF;
+$brand3: #F6AE2D;
 $brand4: #071013;
 $brand5: #061E22;
-$brand6: #9882AC;
+$brand6: #F26419;
 
 .homeContainer {
     display: flex;
@@ -32,6 +32,11 @@ $brand6: #9882AC;
         outline-width: 1px;
         outline-color: $brand1;
         background: $brand5;
+        color: $brand1;
+    }
+
+    input:focus {
+        outline-color: $brand6;
     }
 
     button {
