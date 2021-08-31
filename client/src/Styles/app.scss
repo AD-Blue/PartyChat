@@ -1,9 +1,7 @@
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #A393BF;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #9882AC;
+$brandText: #FCFCFC;
+$brandHeader: #071013;
+$brandPrimary: #23B5D3;
+$brandSecondary: #EBFFEB;
 
 .central {
     margin-top: 0;
@@ -13,5 +11,5 @@ $brand6: #9882AC;
 html {
     padding: 0;
     margin: 0;
-    background: $brand4;
+    background: $brandPrimary;
 }

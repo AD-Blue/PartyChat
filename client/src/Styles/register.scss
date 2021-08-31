@@ -3,12 +3,10 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #A393BF;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #9882AC;
+$brandText: #FCFCFC;
+$brandHeader: #071013;
+$brandPrimary: #23B5D3;
+$brandSecondary: #EBFFEB;
 
 .registerContainer {
     display: flex;
@@ -18,31 +16,31 @@ $brand6: #9882AC;
     width: 60%;
 
     h1 {
-        color: $brand6;
+        color: $brandSecondary;
         font-size: 32px;
     }
 
     p {
-        color: $brand1;
+        color: $brandPrimary;
     }
 
     label {
-        color: $brand1;
+        color: $brandPrimary;
         font-size: 24px;
         margin-top: 5%;
     }
 
     input {
-        border-color: $brand2;
+        border-color: $brandText;
         border-radius: 5px;
         border-width: 1px;
-        background: $brand5;
-        color: $brand1;
+        background: $brandSecondary;
+        color: $brandPrimary;
     }
 
     input:focus {
         outline-width: 1px;
-        outline-color: $brand6;
+        outline-color: $brandSecondary;
     }
 }
 
@@ -52,14 +50,14 @@ $brand6: #9882AC;
     border-radius: 20px;
     margin-top: 30px;
     border-style: none;
-    background-color: $brand2;
+    background-color: $brandText;
     color: #fff;
     font-size: 18px;
 }
 
 .reg-label {
     font-size: 24px;
-    color: $brand3;
+    color: $brandText;
 }
 
 @media (max-width: $phoneWidth) {

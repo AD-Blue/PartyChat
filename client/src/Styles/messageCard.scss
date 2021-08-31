@@ -1,9 +1,7 @@
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #2B4150;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #3D77A4;
+$brandText: #FCFCFC;
+$brandHeader: #071013;
+$brandPrimary: #EBFFEB;
+$brandSecondary: #084B83;
 
 $tabletWidth: 768px;
 $phoneWidth: 480px;
@@ -27,7 +25,7 @@ $largeLaptop: 1200px;
 }
 
 .other {
-    background-color: $brand3;
+    background-color: $brandPrimary;
     width: fit-content;
     padding: 0 5px;
     border-radius: 5px;
@@ -38,7 +36,7 @@ $largeLaptop: 1200px;
 }
 
 .author {
-    background-color: $brand6;
+    background-color: $brandSecondary;
     width: fit-content;
     padding: 0 5px;
     border-radius: 5px;
@@ -50,11 +48,11 @@ $largeLaptop: 1200px;
 }
 
 .author-name {
-    color: $brand2;
+    color: $brandText;
 }
 
 .message-text {
-    color: $brand1;
+    color: $brandPrimary;
 }
 
 @keyframes slideLeftAnimation {

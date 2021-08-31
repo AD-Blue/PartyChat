@@ -5,12 +5,10 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #F6AE2D;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #F26419;
+$brandText: #FCFCFC;
+$brandHeader: #071013;
+$brandPrimary: #4ECDC4;
+$brandSecondary: #42BFDD;
 
 .homeContainer {
     display: flex;
@@ -20,23 +18,23 @@ $brand6: #F26419;
     width: 60%;
 
     h1 {
-        color: $brand3;
+        color: $brandText;
     }
 
     input {
-        border-color: $brand2;
+        border-color: $brandText;
         border-radius: 5px;
         border-width: 1px;
         padding: 10px 5px;
         font-size: 18px;
         outline-width: 1px;
-        outline-color: $brand1;
-        background: $brand5;
-        color: $brand1;
+        outline-color: $brandPrimary;
+        background: $brandSecondary;
+        color: $brandPrimary;
     }
 
     input:focus {
-        outline-color: $brand6;
+        outline-color: $brandSecondary;
     }
 
     button {
@@ -45,7 +43,7 @@ $brand6: #F26419;
         border-radius: 20px;
         margin-top: 15px;
         border-style: none;
-        background-color: $brand2;
+        background-color: $brandText;
         color: #fff;
         font-size: 18px;
     }
@@ -58,7 +56,7 @@ $brand6: #F26419;
     height: 500px;
     display: flex;
     flex-direction: column;
-    background: $brand5;
+    background: $brandSecondary;
     border-radius: 10px;
 }
 
@@ -68,12 +66,12 @@ $brand6: #F26419;
     text-align: center;
 
     h1 {
-        color: $brand1;
+        color: $brandPrimary;
         font-family: 'Lato', sans-serif;
     }
 
     p {
-        color: $brand4;
+        color: $brandPrimary;
     }
 }
 

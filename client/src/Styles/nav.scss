@@ -1,9 +1,7 @@
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #A393BF;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #9882AC;
+$brandText: #FCFCFC;
+$brandHeader: #071013;
+$brandPrimary: #23B5D3;
+$brandSecondary: #EBFFEB;
 
 $tabletWidth: 768px;
 $phoneWidth: 480px;
@@ -11,7 +9,7 @@ $medLaptop: 992px;
 $largeLaptop: 1200px;
 
 nav {
-    background: $brand2;
+    background: $brandText;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -29,11 +27,11 @@ nav {
 
             a {
                 text-decoration: none;
-                color: $brand1;
+                color: $brandPrimary;
             }
 
             a:active {
-                color: $brand3;
+                color: $brandText;
             }
         }
 

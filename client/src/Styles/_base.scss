@@ -3,13 +3,13 @@ $phoneWidth: 480px;
 $medLaptop: 992px;
 $largeLaptop: 1200px;
 
-$brand1: #FCFCFC;
-$brand2: #23B5D3;
-$brand3: #A393BF;
-$brand4: #071013;
-$brand5: #061E22;
-$brand6: #9882AC;
+$brandPrimary: #FCFCFC;
+$brandText: #23B5D3;
+$brandText: #A393BF;
+$brandPrimary: #071013;
+$brandSecondary: #061E22;
+$brandSecondary: #9882AC;
 
 h1 {
-    color: $brand1;
+    color: $brandPrimary;
 }
